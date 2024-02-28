@@ -1,7 +1,9 @@
 function greet() {
   //Variaveis em javascript (var, let, const)
   //
-
+  alert(
+    "Início do jogo: Escolher o nome e distribuir atributos. Distribua 20 pontos entre Vida e Dano para começar o jogo."
+  );
   let nome = prompt("Digite seu nome"); //criei variavel e nomiei com nome
   let vida = +prompt("Digite quantos pontos deseja colocar em vida");
   let ataque = +prompt("Digite quantos pontos deseja colocar em dano");
@@ -15,8 +17,12 @@ function greet() {
   }
   let hp = vida * 100;
   let dano = ataque * 10;
-
   alert("Seu nome é " + nome + " sua vida é" + hp + " seu ataque é" + dano);
+  alert(
+    "Olá " +
+      nome +
+      ", ja se passaram alguns dias desde que você se juntou à Guilda dos Aventureiros, e você está se preparando para sua primeira incursão em uma masmorra, acompanhado por sua equipe de aventureiros. Após alguns dias de viagem, sua equipe finalmente chega à misteriosa masmorra. Você está cheio de expectativas enquanto se aproxima. A entrada da masmorra está diante de você, escura e ameaçadora. As paredes de pedra estão escorregadias de umidade, e o ar cheira a mofo e decomposição."
+  );
 
   let op = prompt(
     "Digite o que voce quer fazer ? Entrar na dungeon (A) Explorar redondezas (B)"
