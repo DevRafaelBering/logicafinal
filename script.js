@@ -18,7 +18,7 @@ function greet() {
   }
   let hp = vida * 100;
   let dano = ataque * 10;
-  alert("Seu nome é " + nome + " sua vida é" + hp + " seu ataque é" + dano);
+  alert("Seu nome é " + nome + " sua vida é " + hp + " seu ataque é " + dano);
   alert(
     "Olá " +
       nome +
@@ -68,4 +68,6 @@ function greet() {
   alert(
     "Ao olhar adiante, sua equipe depara-se com um grupo de esqueletos dispostos em uma formação ameaçadora. Suas figuras ósseas parecem animadas e prontas para o combate focam em você com uma intensidade sinistra conforme você se aproxima cautelosamente sentindo a presença ameaçadora dos mortos-vivos. Uma batalha começa"
   );
+
+  luta(hp, dano);
 }
