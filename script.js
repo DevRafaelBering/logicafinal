@@ -4,6 +4,7 @@ function greet() {
   alert(
     "Início do jogo: Escolher o nome e distribuir atributos. Distribua 20 pontos entre Vida e Dano para começar o jogo."
   );
+
   let nome = prompt("Digite seu nome"); //criei variavel e nomiei com nome
   let vida = +prompt("Digite quantos pontos deseja colocar em vida");
   let ataque = +prompt("Digite quantos pontos deseja colocar em dano");
