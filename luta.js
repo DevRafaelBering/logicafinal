@@ -2,7 +2,7 @@ function luta(vidaDoGuerreiro, danoDoGuerreiro) {
   let vidaDoMonstro = 800;
   let novohp = vidaDoGuerreiro;
 
-  while (vidaDoGuerreiro >= 0 && vidaDoMonstro >= 0) {
+  while (vidaDoGuerreiro > 0 && vidaDoMonstro > 0) {
     vidaDoMonstro -= danoDoGuerreiro;
     alert("O guerreiro ataca o monstro. Vida do monstro: " + vidaDoMonstro);
     vidaDoGuerreiro -= 60;
