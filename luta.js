@@ -90,15 +90,15 @@ function luta(vidaDoGuerreiro, danoDoGuerreiro) {
   if (vidaDoGuerreiro >= 0) {
     alert("Sua vida atual é " + novohp + " Seu dano atual é " + novodano);
   }
-  let op = prompt(
+  let oper = prompt(
     "Agora você tera que decidir qual porta irá:(A B ou C)/Porta Ouro, Porta de ferro, Porta casa dos pais "
   );
-  if (op == "A") {
+  if (oper == "A") {
     alert(
       "Você escolhe a Porta de Ouro. Atrás dela você encontra muito ouro, cristais etc... Você começa a imaginar toda a glória e poder que poderá obter com este tesouro praticamente infinito. Assim que você toca a primeira moeda a seu alcance uma voz grave e ecoante chama seu nome... Então voce prefere assim ? Acha que seria fácil ? Rei dos monstro, surge com uma aura de poder nunca vista..."
     );
     boss(novohp, novodano);
-  } else if (op == "B") {
+  } else if (oper == "B") {
     alert(
       "Você escolhe a Porta de Ferro, após atravessa-la tudo a sua volta desaparece, o infinito é seu novo horizonte... alguns minutos se passam até que você consegue escutar alguém chamando por seu nome... Finalmente você conseguiu chegar até minha morada... Seus passos até aqui nao foram fáceis, não espere nenhum tipo de alívio agora..."
     );
