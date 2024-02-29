@@ -1,8 +1,7 @@
-function luta(vidaDoGuerreiro, danoDoGuerreiro) {
-  let vidaDoMonstro = 2000;
-  let novohp = vidaDoGuerreiro;
+function boss(vidaGuerreiro, danoGuerreiro) {
+  let vidachefao = 2000;
 
-  while (vidaDoGuerreiro > 0 && vidaDoMonstro > 0) {
+  while (vidaGuerreiro > 0 && vidachefao > 0) {
     alert("Sua vez: ");
     let ataque = prompt(
       "Escolha entre ataque normal, combo ou ataque especial (1,2,3)"
@@ -12,18 +11,18 @@ function luta(vidaDoGuerreiro, danoDoGuerreiro) {
     alert("Você jogou dado. O número é: " + numero);
 
     if (ataque == "1") {
-      vidaDoMonstro -= danoDoGuerreiro;
+      vidachefao -= danoGuerreiro;
       alert(
-        "Você deferiu um ataque simples com sucesso.Vida do monstro: " +
-          vidaDoMonstro
+        "Você deferiu um ataque simples com sucesso.Vida do Chefão: " +
+          vidachefao
       );
     }
 
     if (ataque == "2") {
       var chance = Math.random();
       if (chance >= 0.5) {
-        let nv = vidaDoMonstro - danoDoGuerreiro * 1.5;
-        let nd = danoDoGuerreiro * 1.5;
+        let nv = vidachefao - danoGuerreiro * 2;
+        let nd = danoGuerreiro * 2;
 
         alert(
           "Você deferiu um ataque combo com sucesso! O Chefão sofreu " +
@@ -31,11 +30,11 @@ function luta(vidaDoGuerreiro, danoDoGuerreiro) {
             " de dano. Vida restante: " +
             nv
         );
-        vidaDoMonstro = nv;
+        vidachefao = nv;
       } else {
         alert(
-          "Você deferiu um ataque no monstro mas errou. O Chefão não sofreu dano! " +
-            vidaDoMonstro
+          "Você deferiu um ataque no chefao mas errou. O Chefão não sofreu dano! " +
+            vidachefao
         );
       }
     }
@@ -43,8 +42,8 @@ function luta(vidaDoGuerreiro, danoDoGuerreiro) {
     if (ataque == "3") {
       var chance = Math.random();
       if (chance >= 0.5) {
-        let nv = vidaDoMonstro - danoDoGuerreiro * 2;
-        let nd = danoDoGuerreiro * 2;
+        let nv = vidachefao - danoGuerreiro * 3;
+        let nd = danoGuerreiro * 3;
 
         alert(
           "Você deferiu um ataque especial com sucesso! O Chefão sofreu " +
@@ -52,42 +51,40 @@ function luta(vidaDoGuerreiro, danoDoGuerreiro) {
             " de dano. Vida restante: " +
             nv
         );
-        vidaDoMonstro = nv;
+        vidachefao = nv;
       } else {
         alert(
-          "Você deferiu um ataque no monstro mas errou. O Chefão não sofreu dano! " +
-            vidaDoMonstro
+          "Você deferiu um ataque no chefão mas errou. O Chefão não sofreu dano! " +
+            vidachefao
         );
       }
     }
 
-    alert("Vez do monstro: ");
+    alert("Vez do Chefao: ");
     var chance = Math.random() < 0.7;
     if (chance >= 0.7) {
-      vidaDoGuerreiro -= 100;
-      alert(
-        "O monstro ataca o guerreiro. Vida do guerreiro: " + vidaDoGuerreiro
-      );
+      vidaGuerreiro -= 100;
+      alert("O chefão ataca o guerreiro. Vida do guerreiro: " + vidaGuerreiro);
     } else {
       alert(
-        "O monstro atacou mas falhou! Você continua com vida " +
-          vidaDoGuerreiro +
+        "O chefão atacou mas falhou! Você continua com vida " +
+          vidaGuerreiro +
           " de HP"
       );
     }
   }
 
-  if (vidaDoGuerreiro <= 0) {
+  if (vidaGuerreiro <= 0) {
     alert("Perdeu a batalha. Sua jornada chegou ao fim tente outra vez ");
   } else {
     var azar = Math.random() < 0.7;
     if (azar >= 0.7) {
       alert(
-        "Parabens você venceu a batalha contra os esqueletos, a equipe comemora grande feito, Recompensa: +30 de dano e 200 de hp"
+        "Parabens você venceu a batalha contra chefão, a equipe comemora grande feito."
       );
     } else {
-      if (vidaDoGuerreiro > 0) {
-        let vida = vidaDoGuerreiro - 200;
+      if (vidaGuerreiro > 0) {
+        let vida = vidaGuerreiro - 200;
         alert(
           "Você fica cansado e esta vendo um clarão quando atropeça e bate sua cabeça voce perdeu 200 de hp. Seu novo hp é: " +
             vida
