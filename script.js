@@ -53,9 +53,15 @@ function greet() {
   );
 
   if (ope == "A") {
-    alert(
-      "Ao seguir caminhando pela caverna, o tempo passa e a sua equipe de aventureiros começa a ganhar confiança a atenção vai se dispersando e quando notam, todos estão fazendo piadas em tom de voz descontraído. Tudo parece estar indo bem até que todos começam a ouvir um ruído arrepiante surgindo em meio a suas vozes, o clima alegre se dissipa repentinamente, todos ficam alertas e em silêncio tentando observar o que os espera pela frente"
-    );
+    var chance = Math.random();
+    if (chance >= 0.5) {
+      alert(
+        "Ao seguir caminhando pela caverna, o tempo passa e a sua equipe de aventureiros começa a ganhar confiança a atenção vai se dispersando e quando notam, todos estão fazendo piadas em tom de voz descontraído. Tudo parece estar indo bem até que todos começam a ouvir um ruído arrepiante surgindo em meio a suas vozes, o clima alegre se dissipa repentinamente, todos ficam alertas e em silêncio tentando observar o que os espera pela frente"
+      );
+    } else {
+      hp -= 200;
+      alert("Ao seguir caminhando você tropeça...Vida atual: " + hp);
+    }
   } else {
     alert(
       "Ao analiar o interior da caverna, você nota que o piso está repleto de ossos de animais, deixando o cheiro pútrido ainda mais evidente, você começa a observar as paredes da caverna e encontra um objeto pendurado..."
