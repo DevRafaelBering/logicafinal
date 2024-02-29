@@ -43,7 +43,7 @@ function greet() {
       alert("Seu novo hp é " + hp);
     } else {
       alert(
-        "Após uma busca sem resultados na área, você se dirige à masmorra, aceitando a tranquilidade antes do desafio iminente. Embora sem descobertas notáveis, a exectativa cresce enquanto você se reara ara adentrar a dungeon"
+        "Após uma busca sem resultados na área, você se dirige à masmorra, aceitando a tranquilidade antes do desafio iminente. Embora sem descobertas notáveis, a exectativa cresce enquanto você se preara para adentrar a dungeon"
       );
     }
   }
