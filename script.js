@@ -74,6 +74,15 @@ function greet() {
   alert(
     "Ao olhar adiante, sua equipe depara-se com um grupo de esqueletos dispostos em uma formação ameaçadora. Suas figuras ósseas parecem animadas e prontas para o combate focam em você com uma intensidade sinistra conforme você se aproxima cautelosamente sentindo a presença ameaçadora dos mortos-vivos. Uma batalha começa"
   );
-
-  luta(hp, dano);
+  let opp = prompt(
+    "O que vai fazer? Lutar contra o Monstro (A) ou Sair correndo (B) "
+  );
+  if (opp == "A") {
+    luta(hp, dano);
+  } else {
+    alert(
+      "Ao Sair correndo você bate com a cabeça num pilar de pedra e perde a consciência... "
+    );
+    alert("Fim de jogo...");
+  }
 }
