@@ -24,7 +24,6 @@ function greet() {
       nome +
       ", ja se passaram alguns dias desde que você se juntou à Guilda dos Aventureiros, e você está se preparando para sua primeira incursão em uma masmorra, acompanhado por sua equipe de aventureiros. Após alguns dias de viagem, sua equipe finalmente chega à misteriosa masmorra. Você está cheio de expectativas enquanto se aproxima. A entrada da masmorra está diante de você, escura e ameaçadora. As paredes de pedra estão escorregadias de umidade, e o ar cheira a mofo e decomposição."
   );
-
   let op = prompt(
     "Digite o que voce quer fazer ? Entrar na dungeon (A) Explorar redondezas (B)"
   );

@@ -89,6 +89,9 @@ function boss(vidaGuerreiro, danoGuerreiro) {
           "Você fica cansado e esta vendo um clarão quando atropeça e bate sua cabeça voce perdeu 200 de hp. Seu novo hp é: " +
             vida
         );
+        alert(
+          "Você consegue sair da masmorra e retorna para sua vila, parabéns você voltou da masmorra. Descanse alguns dias..."
+        );
       } else {
         alert(
           "Voce fica cansado e avista um clarão caminhando em sua direção, você encontra a saida da caverna e devagar esta voltando para vila."
