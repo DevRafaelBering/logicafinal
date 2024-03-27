@@ -20,7 +20,7 @@ function boss(vidaGuerreiro, danoGuerreiro) {
 
     if (ataque == "2") {
       var chance = Math.random();
-      if (chance >= 0.5) {
+      if (dado > 2) {
         let nv = vidachefao - danoGuerreiro * 2;
         let nd = danoGuerreiro * 2;
 
@@ -41,7 +41,7 @@ function boss(vidaGuerreiro, danoGuerreiro) {
 
     if (ataque == "3") {
       var chance = Math.random();
-      if (chance >= 0.5) {
+      if (dado > 3) {
         let nv = vidachefao - danoGuerreiro * 3;
         let nd = danoGuerreiro * 3;
 

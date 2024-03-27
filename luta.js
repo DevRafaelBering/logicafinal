@@ -21,7 +21,7 @@ function luta(vidaDoGuerreiro, danoDoGuerreiro) {
 
     if (ataque == "2") {
       var chance = Math.random();
-      if (chance >= 0.5) {
+      if (dado > 2) {
         let nv = vidaDoMonstro - danoDoGuerreiro * 1.5;
         let nd = danoDoGuerreiro * 1.5;
 
@@ -42,7 +42,7 @@ function luta(vidaDoGuerreiro, danoDoGuerreiro) {
 
     if (ataque == "3") {
       var chance = Math.random();
-      if (chance >= 0.5) {
+      if (dado > 3) {
         let nv = vidaDoMonstro - danoDoGuerreiro * 2;
         let nd = danoDoGuerreiro * 2;
 
